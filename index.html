@@ -11,6 +11,38 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Lyrics searcher</title>
+		<link
+			rel="stylesheet"
+			href="./css/styles.css"
+		/>
 	</head>
-	<body></body>
+	<body>
+		<h1>Lyrics searcher</h1>
+		<form id="song-search">
+			<input
+				type="text"
+				name="artist"
+				placeholder="Artist name..."
+				required
+			/>
+			<input
+				type="text"
+				name="song"
+				placeholder="Song name..."
+				required
+			/>
+			<input type="submit" />
+		</form>
+		<img
+			class="loader"
+			src="./assets/loader.svg"
+			alt="Loading..."
+		/>
+		<aside class="error"></aside>
+		<main>
+			<article class="song"></article>
+			<article class="artist"></article>
+		</main>
+	</body>
+	<script src="./js/lyrics-searcher.js"></script>
 </html>
